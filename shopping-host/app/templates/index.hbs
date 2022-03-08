@@ -1,0 +1,19 @@
+<h1>Fastboot-rendered store</h1>
+
+<nav>
+  <LinkTo @route="about">About</LinkTo>
+</nav>
+
+<Dynamic @component="Bag" />
+
+<hr />
+
+<p>Promo for Product A</p>
+
+<Dynamic @component="BuyButton" @data={{hash product="a" text="Buy Product A"}} />
+
+<hr />
+
+<p>Promo for Product B</p>
+
+<Dynamic @component="BuyButton" @data={{hash product="b" text="Buy Product B"}} />

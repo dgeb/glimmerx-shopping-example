@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>GlimmerX Basic Example</title>
+    <title>Dynamic Components</title>
 
     <link rel="icon" href="/public/favicon.png" />
     <link rel="apple-touch-icon" href="/public/logo192.png" />
@@ -11,7 +11,13 @@
     -->
     <link rel="manifest" href="/public/manifest.json" />
   </head>
-  <body class="bg-gray-100">
-    <div id="app" data-glimmer-component="breed-library" data-glimmer-component-data="species:cat"></div>
+  <body>
+    <h1>Dynamic Components</h1>
+    <hr />
+    <div data-dynamic-component="Bag"></div>
+    <hr />
+    <div data-dynamic-component="BuyButton" data-dynamic-component-data='{ "text": "Buy A", "product": "a" }'></div>
+    <hr />
+    <div data-dynamic-component="BuyButton" data-dynamic-component-data='{ "text": "Buy B", "product": "b" }'></div>
   </body>
 </html>

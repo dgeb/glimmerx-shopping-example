@@ -3,12 +3,12 @@ import { service } from '@glimmerx/service';
 import { on } from '@glimmerx/modifier';
 import { eq } from '../helpers';
 
-export default class App extends Component {
+export default class Bag extends Component {
   @service bag;
 
   static template = hbs`
     <div>
-      <h2 class="text-xl font-bold py-4">Bag</h2>
+      <h2>Bag</h2>
       <p>
         {{#if (eq this.bag.items 0)}}
           Your bag is empty!

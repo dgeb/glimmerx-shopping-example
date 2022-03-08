@@ -1,4 +1,7 @@
 {
   "private": true,
-  "workspaces": ["shopping-components", "shopping-host"]
+  "workspaces": ["shopping-components", "shopping-host"],
+  "volta": {
+    "node": "16.14.0"
+  }
 }
